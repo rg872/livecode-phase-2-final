@@ -23,8 +23,8 @@ Disini saya membuat Web SPA untuk review buku. Setiap member dapat mengupload da
 
 | Method        | Endpoint      | Fungsi        |
 | ------------- |:-------------:| -------------:|
-| GET           | '/books'      |               |
-| POST          | '/books'      |               |
-| PUT           | '/books/id'   |               |
-| DELETE        | '/books/id'   |               |
+| GET           | /books      |               |
+| POST          | /books      |               |
+| PUT           | /books/id   |               |
+| DELETE        | /books/id  |               |
 
