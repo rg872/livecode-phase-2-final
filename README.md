@@ -20,11 +20,11 @@ Disini saya membuat Web SPA untuk review buku. Setiap member dapat mengupload da
 5. Di halaman profile, anda bisa mendapat buku yang telah anda upload. Disitu anda bisa buat, ubah dan hapus data buku
 
 ## Endpoint
-`
+
 | Method        | Endpoint      | Fungsi        |
 | ------------- |:-------------:| -------------:|
 | GET           | '/books'      |               |
 | POST          | '/books'      |               |
 | PUT           | '/books/id'   |               |
 | DELETE        | '/books/id'   |               |
-`
+
