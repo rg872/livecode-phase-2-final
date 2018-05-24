@@ -12,11 +12,15 @@ const storage = Storage({
 const bucket = storage.bucket(CLOUD_BUCKET)
 
 const getPublicUrl = (filename) => {
+  console.log(filename);
+  
   return `https://storage.googleapis.com/${CLOUD_BUCKET}/${filename}`
 }
 
 const sendUploadToGCS = (req, res, next) => {
+  console.log(req.body)
   if (!req.file) {
+    console.log('multer gagal')
     return next()
   }
 
@@ -30,6 +34,7 @@ const sendUploadToGCS = (req, res, next) => {
   })
 
   stream.on('error', (err) => {
+    console.log(err)
     req.file.cloudStorageError = err
     next(err)
   })
